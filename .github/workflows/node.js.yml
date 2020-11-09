@@ -16,7 +16,6 @@ jobs:
       matrix:
         os : [ ubuntu-latest, windows-2016 ]
         node-version: [12.x, 14.x]
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -28,7 +27,6 @@ jobs:
     - run: npm test
       
 name: Node CI
-
 on: [push]
 
 jobs:
